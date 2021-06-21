@@ -49,6 +49,9 @@
     <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v17.2" />
     <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -72,19 +75,48 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_GuardBioDataGrid.Designer.vb">
+      <DependentUpon>Frm_GuardBioDataGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GuardBioDataGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_GuardBio.Designer.vb">
       <DependentUpon>Frm_GuardBio.vb</DependentUpon>
     </Compile>
     <Compile Include="Frm_GuardBio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_Profile.Designer.vb">
+      <DependentUpon>Frm_Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_WaitingScreen.Designer.vb">
+      <DependentUpon>Frm_WaitingScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_WaitingScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Connection.vb" />
+    <Compile Include="Functions\Waiting_Module.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <EmbeddedResource Include="Frm_GuardBioDataGrid.resx">
+      <DependentUpon>Frm_GuardBioDataGrid.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_GuardBio.resx">
       <DependentUpon>Frm_GuardBio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Profile.resx">
+      <DependentUpon>Frm_Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_WaitingScreen.resx">
+      <DependentUpon>Frm_WaitingScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
