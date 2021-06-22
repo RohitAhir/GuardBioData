@@ -122,14 +122,6 @@ Public Class Frm_GuardBioDataGrid
             Dim path As String = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
             GridView1.ExportToXls(path + "\Guards_BioData" + Now.ToString("HHmmss") + ".xls", opt)
 
-            'GridView1.OptionsPrint.PrintDetails = True
-            'GridView1.OptionsPrint.ExpandAllDetails = True
-            'Dim opt As PdfExportOptions = New PdfExportOptions()
-            'opt. = DevExpress.Export.ExportType.WYSIWYG
-
-            'Dim path As String = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-            'GridView1.ExportToXls(path + "\Guards_BioData" + Now.ToString("HHmmss") + ".xls", opt)
-
             'Dim path As String = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
             'GridView1.ExportToXls(path + "\Guards_BioData" + Now.ToString("HHmmss") + ".xls")
         End If
