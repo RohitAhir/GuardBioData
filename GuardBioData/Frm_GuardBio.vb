@@ -13,7 +13,7 @@ Public Class Frm_GuardBio
             Dim sql As New SqlCommand("Select Id ,SecurityAgency, VendorCode, WONo, EntryPermitNo, GuardName, FatherName, MotherName, ContactNo, Gender, BirthDate, BloodGroup, 
                              ColourOfEyes, ColourOfHair, MaritalStatus, IdentificationMark1, IdentificationMark2, PermanentAddress, PresentAddress, AadharCardNo, NomineeName, AnyPoliceOrCrimeRecords, AnyPersonalInsurance, DrivingLicense, DrivingLicenseNo,
                               LicenseType, PhysicalApprearance, LanguageKnown1, Read1, Write1, Speak1, LanguageKnown2, Read2, Write2, Speak2, NCCCertificate, ShoeSize, JerseySize, TrouserSize, ComputerKnowledge,
-                              Height, Weight, Chest, BMI, Skills, Religion, Nationality, UAN, PAN, BankAccountNo, IFSCCode, ESICNo, CreatedDate, ModifiedDate From BioData Where Id=" + gId.ToString, connection)
+                              Height, Weight, Chest, BMI, Skills, Religion, Nationality, UAN, PAN, BankAccountNo, IFSCCode, ESICNo, Exam1, PassingYear1, Grade1, Exam2, PassingYear2, Grade2, Exam3, PassingYear3, Grade3 From BioData Where Id=" + gId.ToString, connection)
 
             Dim dataadapter As New SqlDataAdapter(sql)
             Dim dt As New DataTable()
@@ -73,6 +73,15 @@ Public Class Frm_GuardBio
             AccountNoTextEdit.Text = dt.Rows(0).Item("BankAccountNo").ToString
             IFSCCodeTextEdit.Text = dt.Rows(0).Item("IFSCCode").ToString
             ESICNoTextEdit.Text = dt.Rows(0).Item("ESICNo").ToString
+            Exam1TextEdit.Text = dt.Rows(0).Item("Exam1").ToString
+            PassingYear1TextEdit.Text = dt.Rows(0).Item("PassingYear1").ToString
+            Per1TextEdit.Text = dt.Rows(0).Item("Grade1").ToString
+            Exam2TextEdit.Text = dt.Rows(0).Item("Exam2").ToString
+            PassingYear2TextEdit.Text = dt.Rows(0).Item("PassingYear2").ToString
+            Per2TextEdit.Text = dt.Rows(0).Item("Grade2").ToString
+            Exam3TextEdit.Text = dt.Rows(0).Item("Exam3").ToString
+            PassingYear3TextEdit.Text = dt.Rows(0).Item("PassingYear3").ToString
+            Per3TextEdit.Text = dt.Rows(0).Item("Grade3").ToString
         Else
             GuardId = 0
         End If
@@ -226,11 +235,11 @@ Public Class Frm_GuardBio
         rs = New SqlCommand("Insert Into BioData (SecurityAgency, VendorCode, WONo, EntryPermitNo, GuardName, FatherName, MotherName, ContactNo, Gender, BirthDate, BloodGroup, 
                              ColourOfEyes, ColourOfHair, MaritalStatus, IdentificationMark1, IdentificationMark2, PermanentAddress, PresentAddress, AadharCardNo, NomineeName, AnyPoliceOrCrimeRecords, AnyPersonalInsurance, DrivingLicense, DrivingLicenseNo,
                               LicenseType, PhysicalApprearance, LanguageKnown1, Read1, Write1, Speak1, LanguageKnown2, Read2, Write2, Speak2, NCCCertificate, ShoeSize, JerseySize, TrouserSize, ComputerKnowledge,
-                              Height, Weight, Chest, BMI, Skills, Religion, Nationality, UAN, PAN, BankAccountNo, IFSCCode, ESICNo, CreatedDate, ModifiedDate) values 
+                              Height, Weight, Chest, BMI, Skills, Religion, Nationality, UAN, PAN, BankAccountNo, IFSCCode, ESICNo, Exam1, PassingYear1, Grade1, Exam2, PassingYear2, Grade2, Exam3, PassingYear3, Grade3, CreatedDate, ModifiedDate) values 
                              (@SecurityAgency, @VendorCode, @WONo, @EntryPermitNo, @GuardName, @FatherName, @MotherName, @ContactNo, @Gender, @BirthDate, @BloodGroup, 
                              @ColourOfEyes, @ColourOfHair, @MaritalStatus, @IdentificationMark1, @IdentificationMark2, @PermanentAddress, @PresentAddress, @AadharCardNo, @NomineeName, @AnyPoliceOrCrimeRecords, @AnyPersonalInsurance, @DrivingLicense, @DrivingLicenseNo,
                               @LicenseType, @PhysicalApprearance, @LanguageKnown1, @Read1, @Write1, @Speak1, @LanguageKnown2, @Read2, @Write2, @Speak2, @NCCCertificate, @ShoeSize, @JerseySize, @TrouserSize, @ComputerKnowledge,
-                              @Height, @Weight, @Chest, @BMI, @Skills, @Religion, @Nationality, @UAN, @PAN, @BankAccountNo, @IFSCCode, @ESICNo, @CreatedDate, @ModifiedDate)" + "SELECT CAST(scope_identity() AS int)", connection)
+                              @Height, @Weight, @Chest, @BMI, @Skills, @Religion, @Nationality, @UAN, @PAN, @BankAccountNo, @IFSCCode, @ESICNo, @Exam1, @PassingYear1, @Grade1, @Exam2, @PassingYear2, @Grade2, @Exam3, @PassingYear3, @Grade3, @CreatedDate, @ModifiedDate)" + "SELECT CAST(scope_identity() AS int)", connection)
 
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@SecurityAgency", .SqlDbType = SqlDbType.NVarChar, .Size = 50, .Value = SecurityAgencyTextEdit.Text})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@VendorCode", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = VendorCodeTextEdit.Text})
@@ -283,6 +292,15 @@ Public Class Frm_GuardBio
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@BankAccountNo", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = AccountNoTextEdit.Text})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@IFSCCode", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = IFSCCodeTextEdit.Text})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@ESICNo", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = ESICNoTextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Exam1", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = Exam1TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@PassingYear1", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = PassingYear1TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Grade1", .SqlDbType = SqlDbType.NVarChar, .Size = 10, .Value = Per1TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Exam2", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = Exam2TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@PassingYear2", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = PassingYear2TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Grade2", .SqlDbType = SqlDbType.NVarChar, .Size = 10, .Value = Per2TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Exam3", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = Exam3TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@PassingYear3", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = PassingYear3TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Grade3", .SqlDbType = SqlDbType.NVarChar, .Size = 10, .Value = Per3TextEdit.Text})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@CreatedDate", .SqlDbType = SqlDbType.DateTime, .Value = Now})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@ModifiedDate", .SqlDbType = SqlDbType.DateTime, .Value = Now})
 
@@ -302,7 +320,7 @@ Public Class Frm_GuardBio
         rs = New SqlCommand("Update BioData set SecurityAgency=@SecurityAgency, VendorCode=@VendorCode, WONo=@WONo, EntryPermitNo=@EntryPermitNo, GuardName=@GuardName, FatherName=@FatherName, MotherName=@MotherName, ContactNo=@ContactNo, Gender=@Gender, BirthDate=@BirthDate, BloodGroup=@BloodGroup, 
                              ColourOfEyes=@ColourOfEyes, ColourOfHair=@ColourOfHair, MaritalStatus=@MaritalStatus, IdentificationMark1=@IdentificationMark1, IdentificationMark2=@IdentificationMark2, PermanentAddress=@PermanentAddress, PresentAddress=@PresentAddress, AadharCardNo=@AadharCardNo, NomineeName=@NomineeName, AnyPoliceOrCrimeRecords=@AnyPoliceOrCrimeRecords, AnyPersonalInsurance=@AnyPersonalInsurance, DrivingLicense=@DrivingLicense, DrivingLicenseNo=@DrivingLicenseNo,
                               LicenseType=@LicenseType, PhysicalApprearance=@PhysicalApprearance, LanguageKnown1=@LanguageKnown1, Read1=@Read1, Write1=@Write1, Speak1=@Speak1, LanguageKnown2=@LanguageKnown2, Read2=@Read2, Write2=@Write2, Speak2=@Speak2, NCCCertificate=@NCCCertificate, ShoeSize=@ShoeSize, JerseySize=@JerseySize, TrouserSize=@TrouserSize, ComputerKnowledge=@ComputerKnowledge,
-                              Height=@Height, Weight=@Weight, Chest=@Chest, BMI=@BMI, Skills=@Skills, Religion=@Religion, Nationality=@Nationality, UAN=@UAN, PAN=@PAN, BankAccountNo=@BankAccountNo, IFSCCode=@IFSCCode, ESICNo=@ESICNo Where Id=@Id", connection)
+                              Height=@Height, Weight=@Weight, Chest=@Chest, BMI=@BMI, Skills=@Skills, Religion=@Religion, Nationality=@Nationality, UAN=@UAN, PAN=@PAN, BankAccountNo=@BankAccountNo, IFSCCode=@IFSCCode, ESICNo=@ESICNo, Exam1=@Exam1, PassingYear1=@PassingYear1, Grade1=@Grade1, Exam2=@Exam2, PassingYear2=@PassingYear2, Grade2=@Grade2, Exam3=@Exam3, PassingYear3=@PassingYear3, Grade3=@Grade3 Where Id=@Id", connection)
 
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@SecurityAgency", .SqlDbType = SqlDbType.NVarChar, .Size = 50, .Value = SecurityAgencyTextEdit.Text})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@VendorCode", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = VendorCodeTextEdit.Text})
@@ -355,6 +373,15 @@ Public Class Frm_GuardBio
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@BankAccountNo", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = AccountNoTextEdit.Text})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@IFSCCode", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = IFSCCodeTextEdit.Text})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@ESICNo", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = ESICNoTextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Exam1", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = Exam1TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@PassingYear1", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = PassingYear1TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Grade1", .SqlDbType = SqlDbType.NVarChar, .Size = 10, .Value = Per1TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Exam2", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = Exam2TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@PassingYear2", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = PassingYear2TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Grade2", .SqlDbType = SqlDbType.NVarChar, .Size = 10, .Value = Per2TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Exam3", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = Exam3TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@PassingYear3", .SqlDbType = SqlDbType.NVarChar, .Size = 20, .Value = PassingYear3TextEdit.Text})
+        rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Grade3", .SqlDbType = SqlDbType.NVarChar, .Size = 10, .Value = Per3TextEdit.Text})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@ModifiedDate", .SqlDbType = SqlDbType.DateTime, .Value = Now})
         rs.Parameters.Add(New SqlParameter With {.ParameterName = "@Id", .SqlDbType = SqlDbType.Int, .Value = GuardId})
 

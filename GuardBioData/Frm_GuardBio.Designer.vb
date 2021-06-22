@@ -22,6 +22,24 @@ Partial Class Frm_GuardBio
         Me.components = New System.ComponentModel.Container()
         Me.GuardNavigationFrame = New DevExpress.XtraBars.Navigation.NavigationFrame()
         Me.Page1 = New DevExpress.XtraBars.Navigation.NavigationPage()
+        Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
+        Me.Per2TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.Exam2TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.PassingYear2TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.Per1TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.Exam1TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.PassingYear1TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl15 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl16 = New DevExpress.XtraEditors.LabelControl()
+        Me.PersonalInsuranceComboBoxEdit = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.ComputerKnowledgeComboBoxEdit = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.LabelControl84 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl102 = New DevExpress.XtraEditors.LabelControl()
+        Me.CriminalRecordsComboBoxEdit = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.NCCCertificateTextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl88 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl103 = New DevExpress.XtraEditors.LabelControl()
         Me.AadharCardNoTextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl4 = New DevExpress.XtraEditors.GroupControl()
         Me.UANNoTextEdit = New DevExpress.XtraEditors.TextEdit()
@@ -124,27 +142,24 @@ Partial Class Frm_GuardBio
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.DxValidationProvider1 = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
-        Me.PersonalInsuranceComboBoxEdit = New DevExpress.XtraEditors.ComboBoxEdit()
-        Me.ComputerKnowledgeComboBoxEdit = New DevExpress.XtraEditors.ComboBoxEdit()
-        Me.LabelControl84 = New DevExpress.XtraEditors.LabelControl()
-        Me.LabelControl102 = New DevExpress.XtraEditors.LabelControl()
-        Me.CriminalRecordsComboBoxEdit = New DevExpress.XtraEditors.ComboBoxEdit()
-        Me.NCCCertificateTextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.LabelControl88 = New DevExpress.XtraEditors.LabelControl()
-        Me.LabelControl103 = New DevExpress.XtraEditors.LabelControl()
-        Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
-        Me.TextEdit3 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit4 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit5 = New DevExpress.XtraEditors.TextEdit()
-        Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
-        Me.LabelControl15 = New DevExpress.XtraEditors.LabelControl()
-        Me.LabelControl16 = New DevExpress.XtraEditors.LabelControl()
-        Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit6 = New DevExpress.XtraEditors.TextEdit()
+        Me.Per3TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.Exam3TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.PassingYear3TextEdit = New DevExpress.XtraEditors.TextEdit()
         CType(Me.GuardNavigationFrame, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GuardNavigationFrame.SuspendLayout()
         Me.Page1.SuspendLayout()
+        CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl6.SuspendLayout()
+        CType(Me.Per2TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Exam2TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PassingYear2TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Per1TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Exam1TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PassingYear1TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PersonalInsuranceComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ComputerKnowledgeComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CriminalRecordsComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NCCCertificateTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AadharCardNoTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl4.SuspendLayout()
@@ -207,18 +222,9 @@ Partial Class Frm_GuardBio
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DxValidationProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PersonalInsuranceComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComputerKnowledgeComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CriminalRecordsComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NCCCertificateTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl6.SuspendLayout()
-        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit6.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Per3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Exam3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PassingYear3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GuardNavigationFrame
@@ -307,6 +313,195 @@ Partial Class Frm_GuardBio
         Me.Page1.Controls.Add(Me.LabelControl1)
         Me.Page1.Name = "Page1"
         Me.Page1.Size = New System.Drawing.Size(1219, 749)
+        '
+        'GroupControl6
+        '
+        Me.GroupControl6.Controls.Add(Me.Per3TextEdit)
+        Me.GroupControl6.Controls.Add(Me.Exam3TextEdit)
+        Me.GroupControl6.Controls.Add(Me.PassingYear3TextEdit)
+        Me.GroupControl6.Controls.Add(Me.Per2TextEdit)
+        Me.GroupControl6.Controls.Add(Me.Exam2TextEdit)
+        Me.GroupControl6.Controls.Add(Me.PassingYear2TextEdit)
+        Me.GroupControl6.Controls.Add(Me.Per1TextEdit)
+        Me.GroupControl6.Controls.Add(Me.Exam1TextEdit)
+        Me.GroupControl6.Controls.Add(Me.PassingYear1TextEdit)
+        Me.GroupControl6.Controls.Add(Me.LabelControl14)
+        Me.GroupControl6.Controls.Add(Me.LabelControl15)
+        Me.GroupControl6.Controls.Add(Me.LabelControl16)
+        Me.GroupControl6.Location = New System.Drawing.Point(649, 450)
+        Me.GroupControl6.Name = "GroupControl6"
+        Me.GroupControl6.Size = New System.Drawing.Size(558, 151)
+        Me.GroupControl6.TabIndex = 35
+        Me.GroupControl6.Text = "Education Details"
+        '
+        'Per2TextEdit
+        '
+        Me.Per2TextEdit.Location = New System.Drawing.Point(395, 80)
+        Me.Per2TextEdit.Name = "Per2TextEdit"
+        Me.Per2TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Per2TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.Per2TextEdit.Size = New System.Drawing.Size(92, 26)
+        Me.Per2TextEdit.TabIndex = 5
+        '
+        'Exam2TextEdit
+        '
+        Me.Exam2TextEdit.Location = New System.Drawing.Point(39, 80)
+        Me.Exam2TextEdit.Name = "Exam2TextEdit"
+        Me.Exam2TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Exam2TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.Exam2TextEdit.Size = New System.Drawing.Size(88, 26)
+        Me.Exam2TextEdit.TabIndex = 3
+        '
+        'PassingYear2TextEdit
+        '
+        Me.PassingYear2TextEdit.Location = New System.Drawing.Point(214, 80)
+        Me.PassingYear2TextEdit.Name = "PassingYear2TextEdit"
+        Me.PassingYear2TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassingYear2TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.PassingYear2TextEdit.Size = New System.Drawing.Size(92, 26)
+        Me.PassingYear2TextEdit.TabIndex = 4
+        '
+        'Per1TextEdit
+        '
+        Me.Per1TextEdit.Location = New System.Drawing.Point(395, 48)
+        Me.Per1TextEdit.Name = "Per1TextEdit"
+        Me.Per1TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Per1TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.Per1TextEdit.Size = New System.Drawing.Size(92, 26)
+        Me.Per1TextEdit.TabIndex = 2
+        '
+        'Exam1TextEdit
+        '
+        Me.Exam1TextEdit.Location = New System.Drawing.Point(39, 48)
+        Me.Exam1TextEdit.Name = "Exam1TextEdit"
+        Me.Exam1TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Exam1TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.Exam1TextEdit.Size = New System.Drawing.Size(88, 26)
+        Me.Exam1TextEdit.TabIndex = 0
+        '
+        'PassingYear1TextEdit
+        '
+        Me.PassingYear1TextEdit.Location = New System.Drawing.Point(214, 48)
+        Me.PassingYear1TextEdit.Name = "PassingYear1TextEdit"
+        Me.PassingYear1TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassingYear1TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.PassingYear1TextEdit.Size = New System.Drawing.Size(92, 26)
+        Me.PassingYear1TextEdit.TabIndex = 1
+        '
+        'LabelControl14
+        '
+        Me.LabelControl14.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl14.Appearance.Options.UseFont = True
+        Me.LabelControl14.Location = New System.Drawing.Point(214, 26)
+        Me.LabelControl14.Name = "LabelControl14"
+        Me.LabelControl14.Size = New System.Drawing.Size(73, 16)
+        Me.LabelControl14.TabIndex = 161
+        Me.LabelControl14.Text = "Passing Year"
+        '
+        'LabelControl15
+        '
+        Me.LabelControl15.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl15.Appearance.Options.UseFont = True
+        Me.LabelControl15.Location = New System.Drawing.Point(395, 26)
+        Me.LabelControl15.Name = "LabelControl15"
+        Me.LabelControl15.Size = New System.Drawing.Size(45, 16)
+        Me.LabelControl15.TabIndex = 162
+        Me.LabelControl15.Text = "Per (%)"
+        '
+        'LabelControl16
+        '
+        Me.LabelControl16.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl16.Appearance.Options.UseFont = True
+        Me.LabelControl16.Location = New System.Drawing.Point(39, 26)
+        Me.LabelControl16.Name = "LabelControl16"
+        Me.LabelControl16.Size = New System.Drawing.Size(31, 16)
+        Me.LabelControl16.TabIndex = 160
+        Me.LabelControl16.Text = "Exam"
+        '
+        'PersonalInsuranceComboBoxEdit
+        '
+        Me.PersonalInsuranceComboBoxEdit.Location = New System.Drawing.Point(469, 579)
+        Me.PersonalInsuranceComboBoxEdit.Name = "PersonalInsuranceComboBoxEdit"
+        Me.PersonalInsuranceComboBoxEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PersonalInsuranceComboBoxEdit.Properties.Appearance.Options.UseFont = True
+        Me.PersonalInsuranceComboBoxEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.PersonalInsuranceComboBoxEdit.Properties.Items.AddRange(New Object() {"Yes", "No"})
+        Me.PersonalInsuranceComboBoxEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
+        Me.PersonalInsuranceComboBoxEdit.Size = New System.Drawing.Size(146, 26)
+        Me.PersonalInsuranceComboBoxEdit.TabIndex = 24
+        '
+        'ComputerKnowledgeComboBoxEdit
+        '
+        Me.ComputerKnowledgeComboBoxEdit.Location = New System.Drawing.Point(492, 611)
+        Me.ComputerKnowledgeComboBoxEdit.Name = "ComputerKnowledgeComboBoxEdit"
+        Me.ComputerKnowledgeComboBoxEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComputerKnowledgeComboBoxEdit.Properties.Appearance.Options.UseFont = True
+        Me.ComputerKnowledgeComboBoxEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.ComputerKnowledgeComboBoxEdit.Properties.Items.AddRange(New Object() {"Yes", "No"})
+        Me.ComputerKnowledgeComboBoxEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
+        Me.ComputerKnowledgeComboBoxEdit.Size = New System.Drawing.Size(123, 26)
+        Me.ComputerKnowledgeComboBoxEdit.TabIndex = 26
+        '
+        'LabelControl84
+        '
+        Me.LabelControl84.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl84.Appearance.Options.UseFont = True
+        Me.LabelControl84.Location = New System.Drawing.Point(329, 617)
+        Me.LabelControl84.Name = "LabelControl84"
+        Me.LabelControl84.Size = New System.Drawing.Size(157, 16)
+        Me.LabelControl84.TabIndex = 135
+        Me.LabelControl84.Text = "Any Computer Knowledge ?"
+        '
+        'LabelControl102
+        '
+        Me.LabelControl102.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl102.Appearance.Options.UseFont = True
+        Me.LabelControl102.Location = New System.Drawing.Point(329, 585)
+        Me.LabelControl102.Name = "LabelControl102"
+        Me.LabelControl102.Size = New System.Drawing.Size(134, 16)
+        Me.LabelControl102.TabIndex = 133
+        Me.LabelControl102.Text = "Any Personal Insurance"
+        '
+        'CriminalRecordsComboBoxEdit
+        '
+        Me.CriminalRecordsComboBoxEdit.Location = New System.Drawing.Point(144, 611)
+        Me.CriminalRecordsComboBoxEdit.Name = "CriminalRecordsComboBoxEdit"
+        Me.CriminalRecordsComboBoxEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CriminalRecordsComboBoxEdit.Properties.Appearance.Options.UseFont = True
+        Me.CriminalRecordsComboBoxEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.CriminalRecordsComboBoxEdit.Properties.Items.AddRange(New Object() {"Yes", "No"})
+        Me.CriminalRecordsComboBoxEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
+        Me.CriminalRecordsComboBoxEdit.Size = New System.Drawing.Size(179, 26)
+        Me.CriminalRecordsComboBoxEdit.TabIndex = 25
+        '
+        'NCCCertificateTextEdit
+        '
+        Me.NCCCertificateTextEdit.Location = New System.Drawing.Point(144, 579)
+        Me.NCCCertificateTextEdit.Name = "NCCCertificateTextEdit"
+        Me.NCCCertificateTextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NCCCertificateTextEdit.Properties.Appearance.Options.UseFont = True
+        Me.NCCCertificateTextEdit.Size = New System.Drawing.Size(179, 26)
+        Me.NCCCertificateTextEdit.TabIndex = 23
+        '
+        'LabelControl88
+        '
+        Me.LabelControl88.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl88.Appearance.Options.UseFont = True
+        Me.LabelControl88.Location = New System.Drawing.Point(22, 585)
+        Me.LabelControl88.Name = "LabelControl88"
+        Me.LabelControl88.Size = New System.Drawing.Size(86, 16)
+        Me.LabelControl88.TabIndex = 134
+        Me.LabelControl88.Text = "NCC Certificate"
+        '
+        'LabelControl103
+        '
+        Me.LabelControl103.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl103.Appearance.Options.UseFont = True
+        Me.LabelControl103.Location = New System.Drawing.Point(22, 617)
+        Me.LabelControl103.Name = "LabelControl103"
+        Me.LabelControl103.Size = New System.Drawing.Size(107, 16)
+        Me.LabelControl103.TabIndex = 132
+        Me.LabelControl103.Text = "Criminal Records ?"
         '
         'AadharCardNoTextEdit
         '
@@ -825,10 +1020,10 @@ Partial Class Frm_GuardBio
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(649, 596)
+        Me.btnSave.Location = New System.Drawing.Point(649, 607)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(216, 41)
-        Me.btnSave.TabIndex = 35
+        Me.btnSave.TabIndex = 36
         Me.btnSave.Text = "Save && Next -->"
         '
         'ReligionTextEdit
@@ -1348,191 +1543,32 @@ Partial Class Frm_GuardBio
         Me.GridView1.OptionsView.ShowGroupPanel = False
         Me.GridView1.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.[False]
         '
-        'PersonalInsuranceComboBoxEdit
+        'Per3TextEdit
         '
-        Me.PersonalInsuranceComboBoxEdit.Location = New System.Drawing.Point(469, 579)
-        Me.PersonalInsuranceComboBoxEdit.Name = "PersonalInsuranceComboBoxEdit"
-        Me.PersonalInsuranceComboBoxEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PersonalInsuranceComboBoxEdit.Properties.Appearance.Options.UseFont = True
-        Me.PersonalInsuranceComboBoxEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.PersonalInsuranceComboBoxEdit.Properties.Items.AddRange(New Object() {"Yes", "No"})
-        Me.PersonalInsuranceComboBoxEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-        Me.PersonalInsuranceComboBoxEdit.Size = New System.Drawing.Size(146, 26)
-        Me.PersonalInsuranceComboBoxEdit.TabIndex = 130
+        Me.Per3TextEdit.Location = New System.Drawing.Point(395, 112)
+        Me.Per3TextEdit.Name = "Per3TextEdit"
+        Me.Per3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Per3TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.Per3TextEdit.Size = New System.Drawing.Size(92, 26)
+        Me.Per3TextEdit.TabIndex = 8
         '
-        'ComputerKnowledgeComboBoxEdit
+        'Exam3TextEdit
         '
-        Me.ComputerKnowledgeComboBoxEdit.Location = New System.Drawing.Point(492, 611)
-        Me.ComputerKnowledgeComboBoxEdit.Name = "ComputerKnowledgeComboBoxEdit"
-        Me.ComputerKnowledgeComboBoxEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComputerKnowledgeComboBoxEdit.Properties.Appearance.Options.UseFont = True
-        Me.ComputerKnowledgeComboBoxEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.ComputerKnowledgeComboBoxEdit.Properties.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComputerKnowledgeComboBoxEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-        Me.ComputerKnowledgeComboBoxEdit.Size = New System.Drawing.Size(123, 26)
-        Me.ComputerKnowledgeComboBoxEdit.TabIndex = 131
+        Me.Exam3TextEdit.Location = New System.Drawing.Point(39, 112)
+        Me.Exam3TextEdit.Name = "Exam3TextEdit"
+        Me.Exam3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Exam3TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.Exam3TextEdit.Size = New System.Drawing.Size(88, 26)
+        Me.Exam3TextEdit.TabIndex = 6
         '
-        'LabelControl84
+        'PassingYear3TextEdit
         '
-        Me.LabelControl84.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl84.Appearance.Options.UseFont = True
-        Me.LabelControl84.Location = New System.Drawing.Point(329, 617)
-        Me.LabelControl84.Name = "LabelControl84"
-        Me.LabelControl84.Size = New System.Drawing.Size(157, 16)
-        Me.LabelControl84.TabIndex = 135
-        Me.LabelControl84.Text = "Any Computer Knowledge ?"
-        '
-        'LabelControl102
-        '
-        Me.LabelControl102.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl102.Appearance.Options.UseFont = True
-        Me.LabelControl102.Location = New System.Drawing.Point(329, 585)
-        Me.LabelControl102.Name = "LabelControl102"
-        Me.LabelControl102.Size = New System.Drawing.Size(134, 16)
-        Me.LabelControl102.TabIndex = 133
-        Me.LabelControl102.Text = "Any Personal Insurance"
-        '
-        'CriminalRecordsComboBoxEdit
-        '
-        Me.CriminalRecordsComboBoxEdit.Location = New System.Drawing.Point(144, 611)
-        Me.CriminalRecordsComboBoxEdit.Name = "CriminalRecordsComboBoxEdit"
-        Me.CriminalRecordsComboBoxEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CriminalRecordsComboBoxEdit.Properties.Appearance.Options.UseFont = True
-        Me.CriminalRecordsComboBoxEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.CriminalRecordsComboBoxEdit.Properties.Items.AddRange(New Object() {"Yes", "No"})
-        Me.CriminalRecordsComboBoxEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-        Me.CriminalRecordsComboBoxEdit.Size = New System.Drawing.Size(179, 26)
-        Me.CriminalRecordsComboBoxEdit.TabIndex = 129
-        '
-        'NCCCertificateTextEdit
-        '
-        Me.NCCCertificateTextEdit.Location = New System.Drawing.Point(144, 579)
-        Me.NCCCertificateTextEdit.Name = "NCCCertificateTextEdit"
-        Me.NCCCertificateTextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NCCCertificateTextEdit.Properties.Appearance.Options.UseFont = True
-        Me.NCCCertificateTextEdit.Size = New System.Drawing.Size(179, 26)
-        Me.NCCCertificateTextEdit.TabIndex = 128
-        '
-        'LabelControl88
-        '
-        Me.LabelControl88.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl88.Appearance.Options.UseFont = True
-        Me.LabelControl88.Location = New System.Drawing.Point(22, 585)
-        Me.LabelControl88.Name = "LabelControl88"
-        Me.LabelControl88.Size = New System.Drawing.Size(86, 16)
-        Me.LabelControl88.TabIndex = 134
-        Me.LabelControl88.Text = "NCC Certificate"
-        '
-        'LabelControl103
-        '
-        Me.LabelControl103.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl103.Appearance.Options.UseFont = True
-        Me.LabelControl103.Location = New System.Drawing.Point(22, 617)
-        Me.LabelControl103.Name = "LabelControl103"
-        Me.LabelControl103.Size = New System.Drawing.Size(107, 16)
-        Me.LabelControl103.TabIndex = 132
-        Me.LabelControl103.Text = "Criminal Records ?"
-        '
-        'GroupControl6
-        '
-        Me.GroupControl6.Controls.Add(Me.TextEdit1)
-        Me.GroupControl6.Controls.Add(Me.TextEdit2)
-        Me.GroupControl6.Controls.Add(Me.TextEdit6)
-        Me.GroupControl6.Controls.Add(Me.TextEdit3)
-        Me.GroupControl6.Controls.Add(Me.TextEdit4)
-        Me.GroupControl6.Controls.Add(Me.TextEdit5)
-        Me.GroupControl6.Controls.Add(Me.LabelControl14)
-        Me.GroupControl6.Controls.Add(Me.LabelControl15)
-        Me.GroupControl6.Controls.Add(Me.LabelControl16)
-        Me.GroupControl6.Location = New System.Drawing.Point(649, 450)
-        Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(558, 123)
-        Me.GroupControl6.TabIndex = 166
-        Me.GroupControl6.Text = "Education Details"
-        '
-        'TextEdit3
-        '
-        Me.TextEdit3.Location = New System.Drawing.Point(395, 48)
-        Me.TextEdit3.Name = "TextEdit3"
-        Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextEdit3.Properties.Appearance.Options.UseFont = True
-        Me.TextEdit3.Size = New System.Drawing.Size(92, 26)
-        Me.TextEdit3.TabIndex = 2
-        '
-        'TextEdit4
-        '
-        Me.TextEdit4.Location = New System.Drawing.Point(39, 48)
-        Me.TextEdit4.Name = "TextEdit4"
-        Me.TextEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextEdit4.Properties.Appearance.Options.UseFont = True
-        Me.TextEdit4.Size = New System.Drawing.Size(88, 26)
-        Me.TextEdit4.TabIndex = 0
-        '
-        'TextEdit5
-        '
-        Me.TextEdit5.Location = New System.Drawing.Point(230, 48)
-        Me.TextEdit5.Name = "TextEdit5"
-        Me.TextEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextEdit5.Properties.Appearance.Options.UseFont = True
-        Me.TextEdit5.Size = New System.Drawing.Size(78, 26)
-        Me.TextEdit5.TabIndex = 1
-        '
-        'LabelControl14
-        '
-        Me.LabelControl14.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl14.Appearance.Options.UseFont = True
-        Me.LabelControl14.Location = New System.Drawing.Point(230, 26)
-        Me.LabelControl14.Name = "LabelControl14"
-        Me.LabelControl14.Size = New System.Drawing.Size(73, 16)
-        Me.LabelControl14.TabIndex = 161
-        Me.LabelControl14.Text = "Passing Year"
-        '
-        'LabelControl15
-        '
-        Me.LabelControl15.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl15.Appearance.Options.UseFont = True
-        Me.LabelControl15.Location = New System.Drawing.Point(395, 26)
-        Me.LabelControl15.Name = "LabelControl15"
-        Me.LabelControl15.Size = New System.Drawing.Size(45, 16)
-        Me.LabelControl15.TabIndex = 162
-        Me.LabelControl15.Text = "Per (%)"
-        '
-        'LabelControl16
-        '
-        Me.LabelControl16.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelControl16.Appearance.Options.UseFont = True
-        Me.LabelControl16.Location = New System.Drawing.Point(39, 26)
-        Me.LabelControl16.Name = "LabelControl16"
-        Me.LabelControl16.Size = New System.Drawing.Size(31, 16)
-        Me.LabelControl16.TabIndex = 160
-        Me.LabelControl16.Text = "Exam"
-        '
-        'TextEdit1
-        '
-        Me.TextEdit1.Location = New System.Drawing.Point(395, 80)
-        Me.TextEdit1.Name = "TextEdit1"
-        Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextEdit1.Properties.Appearance.Options.UseFont = True
-        Me.TextEdit1.Size = New System.Drawing.Size(92, 26)
-        Me.TextEdit1.TabIndex = 165
-        '
-        'TextEdit2
-        '
-        Me.TextEdit2.Location = New System.Drawing.Point(39, 80)
-        Me.TextEdit2.Name = "TextEdit2"
-        Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextEdit2.Properties.Appearance.Options.UseFont = True
-        Me.TextEdit2.Size = New System.Drawing.Size(88, 26)
-        Me.TextEdit2.TabIndex = 163
-        '
-        'TextEdit6
-        '
-        Me.TextEdit6.Location = New System.Drawing.Point(230, 80)
-        Me.TextEdit6.Name = "TextEdit6"
-        Me.TextEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextEdit6.Properties.Appearance.Options.UseFont = True
-        Me.TextEdit6.Size = New System.Drawing.Size(78, 26)
-        Me.TextEdit6.TabIndex = 164
+        Me.PassingYear3TextEdit.Location = New System.Drawing.Point(214, 112)
+        Me.PassingYear3TextEdit.Name = "PassingYear3TextEdit"
+        Me.PassingYear3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassingYear3TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.PassingYear3TextEdit.Size = New System.Drawing.Size(92, 26)
+        Me.PassingYear3TextEdit.TabIndex = 7
         '
         'Frm_GuardBio
         '
@@ -1548,6 +1584,19 @@ Partial Class Frm_GuardBio
         Me.GuardNavigationFrame.ResumeLayout(False)
         Me.Page1.ResumeLayout(False)
         Me.Page1.PerformLayout()
+        CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl6.ResumeLayout(False)
+        Me.GroupControl6.PerformLayout()
+        CType(Me.Per2TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Exam2TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PassingYear2TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Per1TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Exam1TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PassingYear1TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PersonalInsuranceComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ComputerKnowledgeComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CriminalRecordsComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NCCCertificateTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AadharCardNoTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl4.ResumeLayout(False)
@@ -1614,19 +1663,9 @@ Partial Class Frm_GuardBio
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DxValidationProvider1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PersonalInsuranceComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComputerKnowledgeComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CriminalRecordsComboBoxEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NCCCertificateTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl6.ResumeLayout(False)
-        Me.GroupControl6.PerformLayout()
-        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit6.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Per3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Exam3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PassingYear3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1744,13 +1783,16 @@ Partial Class Frm_GuardBio
     Friend WithEvents LabelControl88 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl103 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents GroupControl6 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit6 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit3 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit4 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit5 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Per2TextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Exam2TextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents PassingYear2TextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Per1TextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Exam1TextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents PassingYear1TextEdit As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LabelControl14 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl15 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl16 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents Per3TextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Exam3TextEdit As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents PassingYear3TextEdit As DevExpress.XtraEditors.TextEdit
 End Class
