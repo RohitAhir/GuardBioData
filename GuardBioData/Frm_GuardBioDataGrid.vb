@@ -17,15 +17,16 @@ Public Class Frm_GuardBioDataGrid
         Dim BS As New BindingSource
         Dim BSDetails As New BindingSource
 
-        Dim sql As New SqlCommand("Select Id ,SecurityAgency, VendorCode, WONo, EntryPermitNo, GuardName, FatherName, MotherName, ContactNo, Gender, BirthDate, BloodGroup, 
+        Dim sql As New SqlCommand("Select Id ,SecurityAgency, VendorCode, WONo, EntryPermitNo, GuardName, FatherName, MotherName, ContactNo, Gender, BirthDate, DateDiff(Hour,BirthDate,GETDATE())/8766 AS Age, BloodGroup, 
                              ColourOfEyes, ColourOfHair, MaritalStatus, IdentificationMark1, IdentificationMark2, PermanentAddress, PresentAddress, AadharCardNo, NomineeName, AnyPoliceOrCrimeRecords, AnyPersonalInsurance, DrivingLicense, DrivingLicenseNo,
                               LicenseType, PhysicalApprearance, LanguageKnown1, Read1, Write1, Speak1, LanguageKnown2, Read2, Write2, Speak2, NCCCertificate, ShoeSize, JerseySize, TrouserSize, ComputerKnowledge,
-                              Height, Weight, Chest, BMI, Skills, Religion, Nationality, UAN, PAN, BankAccountNo, IFSCCode, ESICNo, CreatedDate, ModifiedDate From BioData order by CreatedDate desc", connection)
+                              Height, Weight, Chest, BMI, Skills, Religion, Nationality, UAN, PAN, BankAccountNo, IFSCCode, ESICNo, Exam1, PassingYear1, Grade1, Exam2, PassingYear2, Grade2, Exam3, PassingYear3, Grade3 From BioData order by CreatedDate desc", connection)
 
         Dim dataadapter As New SqlDataAdapter(sql)
         dataadapter.Fill(ds, "BioData")
 
-        Dim sqlChild As New SqlCommand("Select GuardId,Company,Designation,JoinDate,ResignationDate from Profile", connection)
+        Dim sqlChild As New SqlCommand("Select GuardId,Company,Designation,JoinDate,ResignationDate,case when ResignationDate is null then dbo.udfDateDiffinYrMonDay(JoinDate,GETDATE())
+                                   else dbo.udfDateDiffinYrMonDay(JoinDate,ResignationDate) end As Experience from Profile", connection)
         Dim da As New SqlDataAdapter(sqlChild)
         da.Fill(ds, "Profile")
 
@@ -57,15 +58,16 @@ Public Class Frm_GuardBioDataGrid
         Dim BS As New BindingSource
         Dim BSDetails As New BindingSource
 
-        Dim sql As New SqlCommand("Select Id ,SecurityAgency, VendorCode, WONo, EntryPermitNo, GuardName, FatherName, MotherName, ContactNo, Gender, BirthDate, BloodGroup, 
+        Dim sql As New SqlCommand("Select Id ,SecurityAgency, VendorCode, WONo, EntryPermitNo, GuardName, FatherName, MotherName, ContactNo, Gender, BirthDate, DateDiff(Hour,BirthDate,GETDATE())/8766 AS Age, BloodGroup, 
                              ColourOfEyes, ColourOfHair, MaritalStatus, IdentificationMark1, IdentificationMark2, PermanentAddress, PresentAddress, AadharCardNo, NomineeName, AnyPoliceOrCrimeRecords, AnyPersonalInsurance, DrivingLicense, DrivingLicenseNo,
                               LicenseType, PhysicalApprearance, LanguageKnown1, Read1, Write1, Speak1, LanguageKnown2, Read2, Write2, Speak2, NCCCertificate, ShoeSize, JerseySize, TrouserSize, ComputerKnowledge,
-                              Height, Weight, Chest, BMI, Skills, Religion, Nationality, UAN, PAN, BankAccountNo, IFSCCode, ESICNo, CreatedDate, ModifiedDate From BioData Where GuardName like '%" + NameTextEdit.Text + "%' order by CreatedDate desc", connection)
+                              Height, Weight, Chest, BMI, Skills, Religion, Nationality, UAN, PAN, BankAccountNo, IFSCCode, ESICNo, Exam1, PassingYear1, Grade1, Exam2, PassingYear2, Grade2, Exam3, PassingYear3, Grade3 From BioData Where GuardName like '%" + NameTextEdit.Text + "%' order by CreatedDate desc", connection)
 
         Dim dataadapter As New SqlDataAdapter(sql)
         dataadapter.Fill(ds, "BioData")
 
-        Dim sqlChild As New SqlCommand("Select GuardId,Company,Designation,JoinDate,ResignationDate from Profile", connection)
+        Dim sqlChild As New SqlCommand("Select GuardId,Company,Designation,JoinDate,ResignationDate,case when ResignationDate is null then dbo.udfDateDiffinYrMonDay(JoinDate,GETDATE())
+                                   else dbo.udfDateDiffinYrMonDay(JoinDate,ResignationDate) end As Experience from Profile", connection)
         Dim da As New SqlDataAdapter(sqlChild)
         da.Fill(ds, "Profile")
 

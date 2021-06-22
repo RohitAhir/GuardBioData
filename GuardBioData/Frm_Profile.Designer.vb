@@ -20,7 +20,9 @@ Partial Class Frm_Profile
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_Profile))
         Me.MainPanel = New DevExpress.XtraEditors.PanelControl()
+        Me.CompanyNameTextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.btnCancel = New DevExpress.XtraEditors.SimpleButton()
         Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
         Me.ResignationDateDateEdit = New DevExpress.XtraEditors.DateEdit()
@@ -31,16 +33,15 @@ Partial Class Frm_Profile
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         Me.DxValidationProvider1 = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
-        Me.CompanyNameTextEdit = New DevExpress.XtraEditors.TextEdit()
         CType(Me.MainPanel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainPanel.SuspendLayout()
+        CType(Me.CompanyNameTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ResignationDateDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ResignationDateDateEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JoinDateDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JoinDateDateEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DesignationTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DxValidationProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CompanyNameTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainPanel
@@ -62,6 +63,15 @@ Partial Class Frm_Profile
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.Size = New System.Drawing.Size(325, 195)
         Me.MainPanel.TabIndex = 0
+        '
+        'CompanyNameTextEdit
+        '
+        Me.CompanyNameTextEdit.Location = New System.Drawing.Point(124, 13)
+        Me.CompanyNameTextEdit.Name = "CompanyNameTextEdit"
+        Me.CompanyNameTextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CompanyNameTextEdit.Properties.Appearance.Options.UseFont = True
+        Me.CompanyNameTextEdit.Size = New System.Drawing.Size(180, 26)
+        Me.CompanyNameTextEdit.TabIndex = 0
         '
         'btnCancel
         '
@@ -164,15 +174,6 @@ Partial Class Frm_Profile
         Me.LabelControl1.TabIndex = 0
         Me.LabelControl1.Text = "Designation"
         '
-        'CompanyNameTextEdit
-        '
-        Me.CompanyNameTextEdit.Location = New System.Drawing.Point(124, 13)
-        Me.CompanyNameTextEdit.Name = "CompanyNameTextEdit"
-        Me.CompanyNameTextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CompanyNameTextEdit.Properties.Appearance.Options.UseFont = True
-        Me.CompanyNameTextEdit.Size = New System.Drawing.Size(180, 26)
-        Me.CompanyNameTextEdit.TabIndex = 0
-        '
         'Frm_Profile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -180,19 +181,20 @@ Partial Class Frm_Profile
         Me.ClientSize = New System.Drawing.Size(349, 219)
         Me.Controls.Add(Me.MainPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Frm_Profile"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Profile"
         CType(Me.MainPanel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainPanel.ResumeLayout(False)
         Me.MainPanel.PerformLayout()
+        CType(Me.CompanyNameTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ResignationDateDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ResignationDateDateEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JoinDateDateEdit.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JoinDateDateEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DesignationTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DxValidationProvider1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CompanyNameTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

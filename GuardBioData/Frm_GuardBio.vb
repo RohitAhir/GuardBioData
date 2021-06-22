@@ -428,7 +428,7 @@ Public Class Frm_GuardBio
         With GridView1
             .Columns("Id").Visible = False
             .Columns("GuardId").Visible = False
-            .Columns("Company").Name = "Company/Org."
+            .Columns("Company").Caption = "Company/Org."
         End With
         GridView1.BestFitColumns()
         GridView1.OptionsBehavior.Editable = False

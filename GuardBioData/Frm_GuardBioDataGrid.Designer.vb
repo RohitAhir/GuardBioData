@@ -19,7 +19,10 @@ Partial Class Frm_GuardBioDataGrid
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_GuardBioDataGrid))
         Me.MainPanel = New DevExpress.XtraEditors.PanelControl()
+        Me.btnUpdate = New DevExpress.XtraEditors.SimpleButton()
+        Me.btnNew = New DevExpress.XtraEditors.SimpleButton()
         Me.TotalLabelControl = New DevExpress.XtraEditors.LabelControl()
         Me.btnExportToExcel = New DevExpress.XtraEditors.SimpleButton()
         Me.btnGet = New DevExpress.XtraEditors.SimpleButton()
@@ -27,8 +30,6 @@ Partial Class Frm_GuardBioDataGrid
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.NameTextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
-        Me.btnNew = New DevExpress.XtraEditors.SimpleButton()
-        Me.btnUpdate = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.MainPanel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainPanel.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,6 +54,22 @@ Partial Class Frm_GuardBioDataGrid
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.Size = New System.Drawing.Size(898, 399)
         Me.MainPanel.TabIndex = 0
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Location = New System.Drawing.Point(566, 5)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(75, 26)
+        Me.btnUpdate.TabIndex = 10
+        Me.btnUpdate.Text = "Update"
+        '
+        'btnNew
+        '
+        Me.btnNew.Location = New System.Drawing.Point(485, 5)
+        Me.btnNew.Name = "btnNew"
+        Me.btnNew.Size = New System.Drawing.Size(75, 26)
+        Me.btnNew.TabIndex = 9
+        Me.btnNew.Text = "New"
         '
         'TotalLabelControl
         '
@@ -137,28 +154,13 @@ Partial Class Frm_GuardBioDataGrid
         Me.LabelControl1.TabIndex = 0
         Me.LabelControl1.Text = "Name"
         '
-        'btnNew
-        '
-        Me.btnNew.Location = New System.Drawing.Point(485, 5)
-        Me.btnNew.Name = "btnNew"
-        Me.btnNew.Size = New System.Drawing.Size(75, 26)
-        Me.btnNew.TabIndex = 9
-        Me.btnNew.Text = "New"
-        '
-        'btnUpdate
-        '
-        Me.btnUpdate.Location = New System.Drawing.Point(566, 5)
-        Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(75, 26)
-        Me.btnUpdate.TabIndex = 10
-        Me.btnUpdate.Text = "Update"
-        '
         'Frm_GuardBioDataGrid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(922, 423)
         Me.Controls.Add(Me.MainPanel)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Frm_GuardBioDataGrid"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bio Data"

@@ -20,9 +20,13 @@ Partial Class Frm_GuardBio
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_GuardBio))
         Me.GuardNavigationFrame = New DevExpress.XtraBars.Navigation.NavigationFrame()
         Me.Page1 = New DevExpress.XtraBars.Navigation.NavigationPage()
         Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
+        Me.Per3TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.Exam3TextEdit = New DevExpress.XtraEditors.TextEdit()
+        Me.PassingYear3TextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.Per2TextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.Exam2TextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.PassingYear2TextEdit = New DevExpress.XtraEditors.TextEdit()
@@ -142,14 +146,14 @@ Partial Class Frm_GuardBio
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.DxValidationProvider1 = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
-        Me.Per3TextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.Exam3TextEdit = New DevExpress.XtraEditors.TextEdit()
-        Me.PassingYear3TextEdit = New DevExpress.XtraEditors.TextEdit()
         CType(Me.GuardNavigationFrame, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GuardNavigationFrame.SuspendLayout()
         Me.Page1.SuspendLayout()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl6.SuspendLayout()
+        CType(Me.Per3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Exam3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PassingYear3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Per2TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Exam2TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PassingYear2TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,9 +226,6 @@ Partial Class Frm_GuardBio
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DxValidationProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Per3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Exam3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PassingYear3TextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GuardNavigationFrame
@@ -242,7 +243,6 @@ Partial Class Frm_GuardBio
         '
         'Page1
         '
-        Me.Page1.Caption = "Page1"
         Me.Page1.Controls.Add(Me.GroupControl6)
         Me.Page1.Controls.Add(Me.PersonalInsuranceComboBoxEdit)
         Me.Page1.Controls.Add(Me.ComputerKnowledgeComboBoxEdit)
@@ -333,6 +333,33 @@ Partial Class Frm_GuardBio
         Me.GroupControl6.Size = New System.Drawing.Size(558, 151)
         Me.GroupControl6.TabIndex = 35
         Me.GroupControl6.Text = "Education Details"
+        '
+        'Per3TextEdit
+        '
+        Me.Per3TextEdit.Location = New System.Drawing.Point(395, 112)
+        Me.Per3TextEdit.Name = "Per3TextEdit"
+        Me.Per3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Per3TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.Per3TextEdit.Size = New System.Drawing.Size(92, 26)
+        Me.Per3TextEdit.TabIndex = 8
+        '
+        'Exam3TextEdit
+        '
+        Me.Exam3TextEdit.Location = New System.Drawing.Point(39, 112)
+        Me.Exam3TextEdit.Name = "Exam3TextEdit"
+        Me.Exam3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Exam3TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.Exam3TextEdit.Size = New System.Drawing.Size(88, 26)
+        Me.Exam3TextEdit.TabIndex = 6
+        '
+        'PassingYear3TextEdit
+        '
+        Me.PassingYear3TextEdit.Location = New System.Drawing.Point(214, 112)
+        Me.PassingYear3TextEdit.Name = "PassingYear3TextEdit"
+        Me.PassingYear3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassingYear3TextEdit.Properties.Appearance.Options.UseFont = True
+        Me.PassingYear3TextEdit.Size = New System.Drawing.Size(92, 26)
+        Me.PassingYear3TextEdit.TabIndex = 7
         '
         'Per2TextEdit
         '
@@ -1543,39 +1570,13 @@ Partial Class Frm_GuardBio
         Me.GridView1.OptionsView.ShowGroupPanel = False
         Me.GridView1.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.[False]
         '
-        'Per3TextEdit
-        '
-        Me.Per3TextEdit.Location = New System.Drawing.Point(395, 112)
-        Me.Per3TextEdit.Name = "Per3TextEdit"
-        Me.Per3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Per3TextEdit.Properties.Appearance.Options.UseFont = True
-        Me.Per3TextEdit.Size = New System.Drawing.Size(92, 26)
-        Me.Per3TextEdit.TabIndex = 8
-        '
-        'Exam3TextEdit
-        '
-        Me.Exam3TextEdit.Location = New System.Drawing.Point(39, 112)
-        Me.Exam3TextEdit.Name = "Exam3TextEdit"
-        Me.Exam3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Exam3TextEdit.Properties.Appearance.Options.UseFont = True
-        Me.Exam3TextEdit.Size = New System.Drawing.Size(88, 26)
-        Me.Exam3TextEdit.TabIndex = 6
-        '
-        'PassingYear3TextEdit
-        '
-        Me.PassingYear3TextEdit.Location = New System.Drawing.Point(214, 112)
-        Me.PassingYear3TextEdit.Name = "PassingYear3TextEdit"
-        Me.PassingYear3TextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PassingYear3TextEdit.Properties.Appearance.Options.UseFont = True
-        Me.PassingYear3TextEdit.Size = New System.Drawing.Size(92, 26)
-        Me.PassingYear3TextEdit.TabIndex = 7
-        '
         'Frm_GuardBio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1219, 749)
         Me.Controls.Add(Me.GuardNavigationFrame)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Frm_GuardBio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Guard BIO DATA"
@@ -1587,6 +1588,9 @@ Partial Class Frm_GuardBio
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl6.ResumeLayout(False)
         Me.GroupControl6.PerformLayout()
+        CType(Me.Per3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Exam3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PassingYear3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Per2TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Exam2TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PassingYear2TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1663,9 +1667,6 @@ Partial Class Frm_GuardBio
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DxValidationProvider1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Per3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Exam3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PassingYear3TextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
