@@ -243,6 +243,7 @@ Partial Class Frm_GuardBio
         '
         'Page1
         '
+        Me.Page1.Caption = "Page1"
         Me.Page1.Controls.Add(Me.GroupControl6)
         Me.Page1.Controls.Add(Me.PersonalInsuranceComboBoxEdit)
         Me.Page1.Controls.Add(Me.ComputerKnowledgeComboBoxEdit)
@@ -745,16 +746,17 @@ Partial Class Frm_GuardBio
         '
         'BMITextEdit
         '
-        Me.BMITextEdit.Location = New System.Drawing.Point(437, 25)
+        Me.BMITextEdit.Location = New System.Drawing.Point(481, 25)
         Me.BMITextEdit.Name = "BMITextEdit"
         Me.BMITextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BMITextEdit.Properties.Appearance.Options.UseFont = True
+        Me.BMITextEdit.Properties.ReadOnly = True
         Me.BMITextEdit.Size = New System.Drawing.Size(64, 26)
         Me.BMITextEdit.TabIndex = 3
         '
         'ChestTextEdit
         '
-        Me.ChestTextEdit.Location = New System.Drawing.Point(314, 25)
+        Me.ChestTextEdit.Location = New System.Drawing.Point(383, 25)
         Me.ChestTextEdit.Name = "ChestTextEdit"
         Me.ChestTextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ChestTextEdit.Properties.Appearance.Options.UseFont = True
@@ -763,7 +765,7 @@ Partial Class Frm_GuardBio
         '
         'WeightTextEdit
         '
-        Me.WeightTextEdit.Location = New System.Drawing.Point(188, 25)
+        Me.WeightTextEdit.Location = New System.Drawing.Point(244, 25)
         Me.WeightTextEdit.Name = "WeightTextEdit"
         Me.WeightTextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WeightTextEdit.Properties.Appearance.Options.UseFont = True
@@ -774,7 +776,7 @@ Partial Class Frm_GuardBio
         '
         Me.LabelControl8.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl8.Appearance.Options.UseFont = True
-        Me.LabelControl8.Location = New System.Drawing.Point(409, 31)
+        Me.LabelControl8.Location = New System.Drawing.Point(453, 31)
         Me.LabelControl8.Name = "LabelControl8"
         Me.LabelControl8.Size = New System.Drawing.Size(22, 16)
         Me.LabelControl8.TabIndex = 151
@@ -782,7 +784,7 @@ Partial Class Frm_GuardBio
         '
         'HeightTextEdit
         '
-        Me.HeightTextEdit.Location = New System.Drawing.Point(58, 25)
+        Me.HeightTextEdit.Location = New System.Drawing.Point(93, 25)
         Me.HeightTextEdit.Name = "HeightTextEdit"
         Me.HeightTextEdit.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HeightTextEdit.Properties.Appearance.Options.UseFont = True
@@ -793,11 +795,11 @@ Partial Class Frm_GuardBio
         '
         Me.LabelControl9.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl9.Appearance.Options.UseFont = True
-        Me.LabelControl9.Location = New System.Drawing.Point(276, 31)
+        Me.LabelControl9.Location = New System.Drawing.Point(314, 31)
         Me.LabelControl9.Name = "LabelControl9"
-        Me.LabelControl9.Size = New System.Drawing.Size(32, 16)
+        Me.LabelControl9.Size = New System.Drawing.Size(63, 16)
         Me.LabelControl9.TabIndex = 150
-        Me.LabelControl9.Text = "Chest"
+        Me.LabelControl9.Text = "Chest (cm)"
         '
         'LabelControl11
         '
@@ -805,19 +807,19 @@ Partial Class Frm_GuardBio
         Me.LabelControl11.Appearance.Options.UseFont = True
         Me.LabelControl11.Location = New System.Drawing.Point(16, 31)
         Me.LabelControl11.Name = "LabelControl11"
-        Me.LabelControl11.Size = New System.Drawing.Size(36, 16)
+        Me.LabelControl11.Size = New System.Drawing.Size(71, 16)
         Me.LabelControl11.TabIndex = 148
-        Me.LabelControl11.Text = "Height"
+        Me.LabelControl11.Text = "Height (cm.)"
         '
         'LabelControl10
         '
         Me.LabelControl10.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl10.Appearance.Options.UseFont = True
-        Me.LabelControl10.Location = New System.Drawing.Point(142, 31)
+        Me.LabelControl10.Location = New System.Drawing.Point(166, 31)
         Me.LabelControl10.Name = "LabelControl10"
-        Me.LabelControl10.Size = New System.Drawing.Size(40, 16)
+        Me.LabelControl10.Size = New System.Drawing.Size(72, 16)
         Me.LabelControl10.TabIndex = 149
-        Me.LabelControl10.Text = "Weight"
+        Me.LabelControl10.Text = "Weight (Kg.)"
         '
         'GroupControl1
         '
@@ -1515,7 +1517,7 @@ Partial Class Frm_GuardBio
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.Size = New System.Drawing.Size(813, 226)
         Me.GroupControl5.TabIndex = 0
-        Me.GroupControl5.Text = "Profile"
+        Me.GroupControl5.Text = "Company Profile"
         '
         'btnEdit
         '

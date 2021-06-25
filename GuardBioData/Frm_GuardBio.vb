@@ -466,6 +466,12 @@ Public Class Frm_GuardBio
         Me.DialogResult = DialogResult.OK
         Me.Dispose()
     End Sub
+
+    Private Sub HeightTextEdit_EditValueChanged(sender As Object, e As EventArgs) Handles WeightTextEdit.EditValueChanged, HeightTextEdit.EditValueChanged
+        Dim meter = Convert.ToDecimal(IIf(HeightTextEdit.Text = "", 0.0, HeightTextEdit.Text)) / 100.0
+        Dim BMIValue = Convert.ToInt16(IIf(WeightTextEdit.Text = "", 0.0, WeightTextEdit.Text)) / (meter ^ 2)
+        BMITextEdit.Text = Format(BMIValue, "0.00")
+    End Sub
 End Class
 
 Public Class Aadharcard
